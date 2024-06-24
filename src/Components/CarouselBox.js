@@ -7,7 +7,7 @@ import work from "../assets/worker_some.jpg";
 
 export default function CarouselBox() {
   return (
-    <Carousel>
+    <Carousel style={{ margin: 0 }}>
       <Carousel.Item>
         <img
           className="s-block w-100 img-fluid"

@@ -42,5 +42,19 @@ body{
 }
 
 .content {
-  margin-top: 70px; /* Отступ для учета фиксированного заголовка */
+  margin-top: 56px; /* Отступ для учета фиксированного заголовка */
+}
+.container{
+  margin-top: 0;
+}
+
+.tab-pane-content {
+  margin-top: 20px; 
+}
+
+.nav-column {
+  margin-top: 20px; 
+}
+.tab-content-custom {
+  margin-top: 20px; 
 }

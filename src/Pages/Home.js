@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <CarouselBox />
-      <Container>
+      <Container className="container">
         <h2 className="text-center m-4">Our team</h2>
 
         <Row className="m-4">

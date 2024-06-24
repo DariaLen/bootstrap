@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -18,7 +18,19 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-      </div>
+      </div> */}
+
+      <Router basename="/subdirectory">
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 }

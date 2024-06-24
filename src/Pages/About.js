@@ -8,15 +8,20 @@ import {
   TabContent,
   TabPane,
 } from "react-bootstrap";
+import "../App.css";
 
 export default class About extends Component {
   render() {
     return (
       <Container>
-        <TabContainer id="ledt-tabs-example" defaultActiveKey="first">
+        <TabContainer
+          className="mt-5"
+          id="ledt-tabs-example"
+          defaultActiveKey="first"
+        >
           <Row>
             <Col sm={3}>
-              <Nav variant="pills" className="flex-column mt-2">
+              <Nav variant="pills" className="flex-column  nav-column mt-2">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Design</Nav.Link>
                 </Nav.Item>
@@ -32,8 +37,8 @@ export default class About extends Component {
               </Nav>
             </Col>
             <Col sm={9}>
-              <TabContent className="mt-3">
-                <TabPane eventKey="first">
+              <TabContent className="mt-3 tab-content-custom">
+                <TabPane eventKey="first" className="tab-pane-content">
                   <img
                     src="https://images.pexels.com/photos/7857557/pexels-photo-7857557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="image"
@@ -47,7 +52,7 @@ export default class About extends Component {
                     hashtag video practice
                   </p>
                 </TabPane>
-                <TabPane eventKey="second">
+                <TabPane eventKey="second" className="tab-pane-content">
                   <img
                     src="https://images.pexels.com/photos/6169046/pexels-photo-6169046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="image"
@@ -61,7 +66,7 @@ export default class About extends Component {
                     hashtag video practice
                   </p>
                 </TabPane>
-                <TabPane eventKey="third">
+                <TabPane eventKey="third" className="tab-pane-content">
                   <img
                     src="https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="image"
@@ -75,7 +80,7 @@ export default class About extends Component {
                     hashtag video practice
                   </p>
                 </TabPane>
-                <TabPane eventKey="fourth">
+                <TabPane eventKey="fourth" className="tab-pane-content">
                   <img
                     src="https://images.pexels.com/photos/7857532/pexels-photo-7857532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="image"
